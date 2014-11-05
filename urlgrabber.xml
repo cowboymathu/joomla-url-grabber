@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content">
+        <name>plg_content_urlgrabber</name>
+        <author>Joomla! Project</author>
+        <creationDate>October 2014</creationDate>
+        <copyright>Copyright info.</copyright>
+        <license>License info</license>
+        <authorEmail>cowboymathu@gmail.com</authorEmail>
+        <authorUrl>www.makers.dk</authorUrl>
+        <version>0.0.1</version>
+        <description>PLG_CONTENT_URLGRABBER_XML_DESCRIPTION</description>
+        <files>
+            <filename plugin="urlgrabber">urlgrabber.php</filename>
+            <filename>index.html</filename>
+            <filename>simple_html_dom.php</filename>
+            <filename>grabber_functions.php</filename>
+            <folder>forms</folder>
+        </files>
+        <languages>
+            <language tag="en-GB">language/en-GB.plg_content_urlgrabber.ini</language>
+            <language tag="en-GB">language/en-GB.plg_content_urlgrabber.sys.ini</language>
+        </languages>
+        <config>
+                <fields name="params">
+                        <fieldset name="basic" description="CORE_PARAMS_SETTINGS">
+                            <field name="is_urlgrabber_enabled" type="radio"
+                                default="0"
+                                description="JFIELD_PLG_ENABLE_URLGRABBER_DESC"
+                                label="JFIELD_PLG_ENABLE_URLGRABBER_LABEL"
+                            >
+                                <option value="0">JOFF</option>
+                                <option value="1">JON</option>
+                            </field>
+                        
+                            <field name="urlgrabber_category" type="category"
+                                description="JFIELD_PLG_CATEGORY_URLGRABBER_DESC"
+                                label="JFIELD_PLG_CATEGORY_URLGRABBER_LABEL"
+                                extension="com_content"
+                            />
+                        </fieldset>
+                        <fieldset name="grabber_facilities" description="GRABBER_FACILITIES">
+                            <field name="grabber_facility1" type="textarea" label="PLG_GRABBER_FACILITY1_CODE_LABEL" description="PLG_GRABBER_FACILITY1_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility2" type="textarea" label="PLG_GRABBER_FACILITY2_CODE_LABEL" description="PLG_GRABBER_FACILITY2_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility3" type="textarea" label="PLG_GRABBER_FACILITY3_CODE_LABEL" description="PLG_GRABBER_FACILITY3_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility4" type="textarea" label="PLG_GRABBER_FACILITY4_CODE_LABEL" description="PLG_GRABBER_FACILITY4_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility5" type="textarea" label="PLG_GRABBER_FACILITY5_CODE_LABEL" description="PLG_GRABBER_FACILITY5_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility6" type="textarea" label="PLG_GRABBER_FACILITY6_CODE_LABEL" description="PLG_GRABBER_FACILITY6_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility7" type="textarea" label="PLG_GRABBER_FACILITY7_CODE_LABEL" description="PLG_GRABBER_FACILITY7_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                        </fieldset>
+                        <fieldset name="grabber_items" description="GRABBER_ITEMS">
+                            <field type="text" filter="raw" name="grabber_title" label="PLG_GRABBER_TITLE_LABEL" description="PLG_GRABBER_TITLE_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item1" label="PLG_GRABBER_ITEM1_LABEL" description="PLG_GRABBER_ITEM1_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item2" label="PLG_GRABBER_ITEM2_LABEL" description="PLG_GRABBER_ITEM2_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item3" label="PLG_GRABBER_ITEM3_LABEL" description="PLG_GRABBER_ITEM3_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item4" label="PLG_GRABBER_ITEM4_LABEL" description="PLG_GRABBER_ITEM4_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item5" label="PLG_GRABBER_ITEM5_LABEL" description="PLG_GRABBER_ITEM5_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item6" label="PLG_GRABBER_ITEM6_LABEL" description="PLG_GRABBER_ITEM6_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item7" label="PLG_GRABBER_ITEM7_LABEL" description="PLG_GRABBER_ITEM7_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item8" label="PLG_GRABBER_ITEM8_LABEL" description="PLG_GRABBER_ITEM8_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item9" label="PLG_GRABBER_ITEM9_LABEL" description="PLG_GRABBER_ITEM9_DESC" class="inputbox span5"/>
+                            <field type="text" filter="raw" name="grabber_item10" label="PLG_GRABBER_ITEM10_LABEL" description="PLG_GRABBER_ITEM10_DESC" class="inputbox span5"/>
+                        </fieldset>
+                        <fieldset name="grabber_coding" description="GRABBER_CODING">
+                            <field name="full_content"
+                                type="textarea"
+                                label="PLG_GRABBER_CODING_FULL_CONTENT_LABEL"
+                                description="PLG_GRABBER_CODING_FULL_CONTENT_DESC"
+                                filter="raw"
+                                class="inputbox span6"
+                                rows="20"
+                            />
+                        </fieldset>
+                </fields>
+        </config>
+</extension>

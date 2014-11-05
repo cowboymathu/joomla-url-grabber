@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fields name="attribs" >
+
+		<fieldset name="url_grabber_url" description="URL_GRABBER_URL">
+			<field
+				name="grabber_url"
+				type="url"
+				label="PLG_GRABBER_URL_LABEL"
+				description="PLG_GRABBER_URL_DESC"
+				class="inputbox span7"
+			/>
+
+			<field type="spacer" name="spacer" hr="true" />
+			
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility1"
+		    	label="PLG_GRABBER_FACILITY1_LABEL"
+		    	description="PLG_GRABBER_FACILITY1_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility2"
+		    	label="PLG_GRABBER_FACILITY2_LABEL"
+		    	description="PLG_GRABBER_FACILITY2_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility3"
+		    	label="PLG_GRABBER_FACILITY3_LABEL"
+		    	description="PLG_GRABBER_FACILITY3_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility4"
+		    	label="PLG_GRABBER_FACILITY4_LABEL"
+		    	description="PLG_GRABBER_FACILITY4_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility5"
+		    	label="PLG_GRABBER_FACILITY5_LABEL"
+		    	description="PLG_GRABBER_FACILITY5_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility6"
+		    	label="PLG_GRABBER_FACILITY6_LABEL"
+		    	description="PLG_GRABBER_FACILITY6_DESC"
+		    />
+		    <field type="checkbox" value="1" default="0"
+		    	name="grabber_facility7"
+		    	label="PLG_GRABBER_FACILITY7_LABEL"
+		    	description="PLG_GRABBER_FACILITY7_DESC"
+		    />
+		</fieldset>
+	</fields>
+</form>
