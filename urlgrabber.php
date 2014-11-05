@@ -96,9 +96,9 @@ class plgContentUrlgrabber extends JPlugin {
                                 "grabber_facility5",
                                 "grabber_facility6",
                                 "grabber_facility7"];
-                    foreach ($$grabber_facilities as $facility) {
+                    foreach ($grabber_facilities as $facility) {
                         $facility_code = $this->params->get($facility);
-                        $content_facility = $attribs[facility];
+                        $content_facility = $attribs[$facility];
                         if ($content_facility && $facility_code && "" != $facility_code) {
                             $output_facilities .= "<div class='" .$facility. "'>" .$facility_code. "</div>";
                         }
@@ -108,7 +108,7 @@ class plgContentUrlgrabber extends JPlugin {
                         $article->title = $grabber_title;
                     }
 
-                    $output = $facility_code . $output;
+                    $output = $output_facilities . $output;
 
                     $article->text = $output;
                 }

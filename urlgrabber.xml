@@ -39,13 +39,13 @@
                             />
                         </fieldset>
                         <fieldset name="grabber_facilities" description="GRABBER_FACILITIES">
-                            <field name="grabber_facility1" type="textarea" label="PLG_GRABBER_FACILITY1_CODE_LABEL" description="PLG_GRABBER_FACILITY1_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility2" type="textarea" label="PLG_GRABBER_FACILITY2_CODE_LABEL" description="PLG_GRABBER_FACILITY2_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility3" type="textarea" label="PLG_GRABBER_FACILITY3_CODE_LABEL" description="PLG_GRABBER_FACILITY3_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility4" type="textarea" label="PLG_GRABBER_FACILITY4_CODE_LABEL" description="PLG_GRABBER_FACILITY4_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility5" type="textarea" label="PLG_GRABBER_FACILITY5_CODE_LABEL" description="PLG_GRABBER_FACILITY5_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility6" type="textarea" label="PLG_GRABBER_FACILITY6_CODE_LABEL" description="PLG_GRABBER_FACILITY6_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
-                            <field name="grabber_facility7" type="textarea" label="PLG_GRABBER_FACILITY7_CODE_LABEL" description="PLG_GRABBER_FACILITY7_CODE_DESC" filter="raw" class="inputbox span6" rows="20" />
+                            <field name="grabber_facility1" type="textarea" label="PLG_GRABBER_FACILITY1_CODE_LABEL" description="PLG_GRABBER_FACILITY1_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility2" type="textarea" label="PLG_GRABBER_FACILITY2_CODE_LABEL" description="PLG_GRABBER_FACILITY2_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility3" type="textarea" label="PLG_GRABBER_FACILITY3_CODE_LABEL" description="PLG_GRABBER_FACILITY3_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility4" type="textarea" label="PLG_GRABBER_FACILITY4_CODE_LABEL" description="PLG_GRABBER_FACILITY4_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility5" type="textarea" label="PLG_GRABBER_FACILITY5_CODE_LABEL" description="PLG_GRABBER_FACILITY5_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility6" type="textarea" label="PLG_GRABBER_FACILITY6_CODE_LABEL" description="PLG_GRABBER_FACILITY6_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
+                            <field name="grabber_facility7" type="textarea" label="PLG_GRABBER_FACILITY7_CODE_LABEL" description="PLG_GRABBER_FACILITY7_CODE_DESC" filter="raw" class="inputbox span5" rows="10" />
                         </fieldset>
                         <fieldset name="grabber_items" description="GRABBER_ITEMS">
                             <field type="text" filter="raw" name="grabber_title" label="PLG_GRABBER_TITLE_LABEL" description="PLG_GRABBER_TITLE_DESC" class="inputbox span5"/>
