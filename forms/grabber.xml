@@ -12,6 +12,14 @@
 			/>
 
 			<field type="spacer" name="spacer" hr="true" />
+
+			<field type="checkbox" value="1" default="0"
+				name="is_enabled_for_article"
+				label="PLG_GRABBER_IS_ENABLED_FOR_ARTICLE_LABEL"
+				description="PLG_GRABBER_IS_ENABLED_FOR_ARTICLE_DESC"
+			/>
+
+			<field type="spacer" name="spacerEnabled" hr="true" />
 			
 		    <field type="checkbox" value="1" default="0"
 		    	name="grabber_facility1"

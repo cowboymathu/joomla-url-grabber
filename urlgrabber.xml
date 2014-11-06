@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.1" type="plugin" group="content">
+<extension version="3.1" type="plugin" group="content" method="update">
         <name>plg_content_urlgrabber</name>
         <author>Joomla! Project</author>
         <creationDate>October 2014</creationDate>
@@ -7,7 +7,7 @@
         <license>License info</license>
         <authorEmail>cowboymathu@gmail.com</authorEmail>
         <authorUrl>www.makers.dk</authorUrl>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
         <description>PLG_CONTENT_URLGRABBER_XML_DESCRIPTION</description>
         <files>
             <filename plugin="urlgrabber">urlgrabber.php</filename>
@@ -23,6 +23,8 @@
         <config>
                 <fields name="params">
                         <fieldset name="basic" description="CORE_PARAMS_SETTINGS">
+                            <field name="next_version_note" type="note" class="alert" label="NEXT_VERSION_NOTE_LABEL" description="NEXT_VERSION_NOTE_DESC" />
+
                             <field name="is_urlgrabber_enabled" type="radio"
                                 default="0"
                                 description="JFIELD_PLG_ENABLE_URLGRABBER_DESC"

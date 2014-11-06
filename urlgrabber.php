@@ -19,17 +19,17 @@ class plgContentUrlgrabber extends JPlugin {
         function onContentPrepareForm($form, $data) {
                 $app = JFactory::getApplication();
                 $option = $app->input->get('option');
-                $isEnabled = $this->params->get('is_urlgrabber_enabled');
-                $category = $this->params->get('urlgrabber_category');
+                // $isEnabled = $this->params->get('is_urlgrabber_enabled'); // No need
+                // $category = $this->params->get('urlgrabber_category');
                 
                 switch($option) {
                     case 'com_content':
-                        if($isEnabled && $category){
+                        // if($isEnabled && $category){
                             if($app->isAdmin()) {
                                 JForm::addFormPath(__DIR__ . '/forms');
                                 $form->loadFile('grabber', false);
                             }
-                        }
+                        // }
                         return true;
                 }
                 return true;
@@ -37,11 +37,14 @@ class plgContentUrlgrabber extends JPlugin {
         
 
         function onContentPrepare($context, &$article, &$params, $page) {
-            $isEnabled = $this->params->get('is_urlgrabber_enabled');
-            $category = $this->params->get('urlgrabber_category');
+            // $isEnabled = $this->params->get('is_urlgrabber_enabled');
+            // $category = $this->params->get('urlgrabber_category');
+            $attribs = new JRegistry($article->attribs);
+            $isEnabledForArticle = $attribs['is_enabled_for_article'];
 
-            if ($isEnabled && $category == $article->catid) {
-                $attribs = new JRegistry($article->attribs);
+            // if ($isEnabled && $category == $article->catid) { // no need to care about category
+            if ($isEnabledForArticle) {
+                
                 $url = $attribs['grabber_url'];
 
                 if ($url && $url != "") {
