@@ -78,7 +78,7 @@ class plgContentUrlgrabber extends JPlugin {
                     }                                
 
                     if ($full_content && $full_content != "") {
-                        $output = "<div class='urlgrabber'>" . $output . "</div>";
+                        $output = "<div id='urlgrabber' class='urlgrabber'>" . $output . "</div>";
                         $html = str_get_html($output);
                         
                         // eval($full_content);
@@ -114,6 +114,17 @@ class plgContentUrlgrabber extends JPlugin {
                     $output = $output_facilities . $output;
 
                     $article->text = $output;
+
+                    /*
+                     * This will add a canonical link to the article so search engines will handle in the right way.
+                     *
+                     * */
+
+
+//                    $doc =& JFactory::getDocument();
+                    $doc = JFactory::getDocument();
+                    $urlTag = '<link rel="canonical" href="' .$url. '" />';
+                    $doc->addCustomTag($urlTag);
                 }
             }
         }
